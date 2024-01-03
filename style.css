@@ -23,6 +23,7 @@ header {
 
 
 .logo {
+
     font-size: 30px;
     font-weight: 700;
     color: #00ba3e ;
@@ -133,7 +134,7 @@ section {
 .icons i {
     display: block;
     margin: 26px 0;
-    font-size: 24px;
+    font-size: 28px;
     color: #fff;
     transition: all .50s ease;
 }
@@ -226,25 +227,41 @@ section {
     #menu-icon {
         display: block;
     }
+
+    .logo {
+        position: relative;
+    }
+
     .navlist {
         position: absolute;
-        top: 100%;
+        top: 95%;
         right: -100%;
         width: 300px;
-        height: 25vh;
-        background: #4d9559;
+        background: #1eb337;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 15px 20px;
         transition: all .55s ease;
+        border-radius: 10px;
     }
+    
+    .nav-section {
+        width: 260px; /* Занимает всю ширину .navlist */
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px; /* Скругление углов */
+    }
+    
     .navlist a {
-       margin-left: 0;
-       display: block;
-       margin: 7px 0;
-  
+        display: block;
     }
+    
+    .home { background-color: #1d993a; } /* Цвет фона для Home */
+    .project { background-color: #1d993a; } /* Цвет фона для Project */
+    .about { background-color: #1d993a; } /* Цвет фона для About */
+    .contacts { background-color: #1d993a; } /* Цвет фона для Contacts */
+    
     .navlist.open {
         right: 0;
     }
