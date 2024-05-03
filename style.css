@@ -274,7 +274,7 @@ section {
     
     @media (min-width: 240px) and (max-width: 640px) {
         .hero-text h1 {
-            font-family: 'Permanent Marker', cursive;
+            font-family: 'Permanent Marker', cursive, sans-serif;
             font-size: 60px; /* Уменьшаем размер заголовка в разделе героя */
         }
     
