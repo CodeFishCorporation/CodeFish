@@ -7,9 +7,9 @@ menu.onclick = () => {
 };
 
 const sr = ScrollReveal ({
-    distance: '25px',
-    duration: 2600,
-    delay: 450,
+    distance: '65px',
+    duration: 2000, // Уменьшаем продолжительность анимации 
+    delay: 200, // Уменьшаем задержку перед началом анимации
     reset: true
 });
 
