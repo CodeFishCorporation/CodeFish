@@ -271,4 +271,42 @@ section {
         width: 100%;
         height: auto;
     }
+    
+    @media (min-width: 240px) and (max-width: 640px) {
+        .hero-text h1 {
+            font-size: 60px; /* Уменьшаем размер заголовка в разделе героя */
+        }
+    
+        .hero-text h4 {
+            font-size: 20px; /* Уменьшаем размер подзаголовка в разделе героя */
+        }
+    
+        .hero-text p {
+            font-size: 14px; /* Уменьшаем размер текста в разделе героя */
+        }
+    
+        .navlist {
+            margin-top: 10px; /* Уменьшаем верхний отступ для элементов меню */
+        }
+    
+        .nav-section {
+            padding: 10px 15px; /* Уменьшаем внутренние отступы */
+        }
+    
+        .logo {
+            font-size: 24px; /* Уменьшаем размер шрифта для логотипа */
+        }
+    
+        .navlist a {
+            font-size: 14px; /* Уменьшаем размер шрифта для пунктов меню */
+        }
+    
+        #menu-icon {
+            font-size: 24px; /* Увеличиваем размер иконки меню */
+        }
+    
+        .bx {
+            display: inline-block; /* Возвращаем в строй иконку меню */
+        }
+    }
 }
