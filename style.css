@@ -236,7 +236,9 @@ section {
     }
 }
 @media (max-width: 990px) {
-    
+    #menu-icon {
+        display: block;
+    }
 
     .logo {
         position: relative;
