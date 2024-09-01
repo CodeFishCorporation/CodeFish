@@ -23,6 +23,7 @@ header {
 
 
 .logo {
+
     font-size: 30px;
     font-weight: 700;
     color: #00ba3e ;
@@ -66,7 +67,23 @@ header {
 section {
     padding: 0 19%;
 }
-
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: #032c08;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
 
 
 @media (max-width: 1535px) {
@@ -133,25 +150,41 @@ section {
     #menu-icon {
         display: block;
     }
+
+    .logo {
+        position: relative;
+    }
+
     .navlist {
         position: absolute;
-        top: 100%;
+        top: 95%;
         right: -100%;
         width: 300px;
-        height: 25vh;
-        background: #4d9559;
+        background: #1eb337;
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 15px 20px;
         transition: all .55s ease;
+        border-radius: 10px;
     }
+    
+    .nav-section {
+        width: 260px; /* Занимает всю ширину .navlist */
+        margin: 10px 0;
+        padding: 10px;
+        border-radius: 5px; /* Скругление углов */
+    }
+    
     .navlist a {
-       margin-left: 0;
-       display: block;
-       margin: 7px 0;
-  
+        display: block;
     }
+    
+    .home { background-color: #1d993a; } /* Цвет фона для Home */
+    .project { background-color: #1d993a; } /* Цвет фона для Project */
+    .about { background-color: #1d993a; } /* Цвет фона для About */
+    .contacts { background-color: #1d993a; } /* Цвет фона для Contacts */
+    
     .navlist.open {
         right: 0;
     }
@@ -160,5 +193,44 @@ section {
     .hero-img img {
         width: 100%;
         height: auto;
+    }
+    
+    @media (min-width: 240px) and (max-width: 640px) {
+        .hero-text h1 {
+            font-family: 'Permanent Marker', cursive, sans-serif;
+            font-size: 60px; /* Уменьшаем размер заголовка в разделе героя */
+        }
+    
+        .hero-text h4 {
+            font-size: 20px; /* Уменьшаем размер подзаголовка в разделе героя */
+        }
+    
+        .hero-text p {
+            font-size: 14px; /* Уменьшаем размер текста в разделе героя */
+        }
+    
+        .navlist {
+            margin-top: 10px; /* Уменьшаем верхний отступ для элементов меню */
+        }
+    
+        .nav-section {
+            padding: 10px 15px; /* Уменьшаем внутренние отступы */
+        }
+    
+        .logo {
+            font-size: 24px; /* Уменьшаем размер шрифта для логотипа */
+        }
+    
+        .navlist a {
+            font-size: 14px; /* Уменьшаем размер шрифта для пунктов меню */
+        }
+    
+        #menu-icon {
+            font-size: 24px; /* Увеличиваем размер иконки меню */
+        }
+    
+        .bx {
+            display: inline-block; /* Возвращаем в строй иконку меню */
+        }
     }
 }
