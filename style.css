@@ -217,19 +217,7 @@ section {
         grid-template-columns: 1fr;
     }
     .icons {
-        /*display: none;*/
-        display: flex;
-        flex-direction: row; /* Горизонтальное расположение иконок */
-        justify-content: left;
-        margin-top: -55%;
-        width: 100%; /* Занимает всю ширину */
-        transform: translateY(-50%);
-    }
-    .icons i {
-        margin-right: 15px; /* Отступы между иконками */
-        font-size: 3rem;
-        color: #fff;
-        transition: all 0.80s ease;
+        display: none;
     }
     .scroll-down {
         display: none;
