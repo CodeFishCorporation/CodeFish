@@ -6,6 +6,15 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    background-image: linear-gradient(245.59deg, #2c3b79 15%, #137a1c 31.53%, #032c08 65.52%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
 header {
     position: fixed;
     right: 0;
@@ -18,8 +27,6 @@ header {
     padding: 33px 9%;
     background: transparent;
 }
-
-
 
 .logo {
 
@@ -51,17 +58,6 @@ header {
     display: none;
 }
 
-.slider-puck {
-    min-height: 100vh;
-    background: linear-gradient(245.59deg, #2c3b79 15%, #137a1c 31.53%, #032c08 65.52%);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    font-family: monospace;
-    
-}
 .slider {
     position: relative;
     width: 100%;
@@ -95,28 +91,6 @@ header {
     left: unset;
     right: 50px;
 }
-
-section {
-    padding: 0 19%;
-}
-.scroll-down {
-    position: absolute;
-    bottom: 6%;
-    right: 9%;
-}
-.scroll-down i {
-    display: block;
-    padding: 12px;
-    font-size: 25px;
-    color: #032c08;
-    background: #4d9559;
-    border-radius: 30px;
-    transition: all .50s ease;
-}
-.scroll-down i:hover {
-    transform: translateY(-5px);
-}
-
 
 @media (max-width: 1535px) {
     header {
