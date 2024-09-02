@@ -62,24 +62,40 @@ header {
     position: relative;
     width: 100%;
     height: 370px;
-    overflow: hidden;
 }
 .item {
     position: absolute;
-    width: 200px;
-    height: 320px;
+    width: 370px;
+    height: 500px;
     text-align: justify;
-    background-color: #fff;
+    background-color: #000;
     border-radius: 10px;
     padding: 20px;
     transition: 0.5s;
     left: calc(50% - 110px);
     top: 0;
+    color: #fff;
+    overflow: hidden;/* Обрезает содержимое, если оно выходид за рамки блока*/
+    white-space: normal;/*Позволяет тексту переносится на новую страку*/
+    word-wrap: break-word;/*Обеспечивает перенос длинных слов, если они не умещаются в строке.*/
+
+}
+.item h1 {
+    text-align: center;
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
 }
 #next, #prev {
     position: absolute;
     top: 40%;
-    color: #fff;
+    color: #1eb337;
     background-color: transparent;
     border: none;
     font-size: xxx-large;
