@@ -108,6 +108,20 @@ header {
     left: unset;
     right: 50px;
 }
+.image-link {
+    display: block; /* Оборачивает изображение */
+    text-decoration: none; /* Убирает подчеркивание */
+}
+
+.image-link img {
+    display: block; /* Убирает пробелы под изображением */
+    width: 100%; /* Устанавливает ширину изображения в 100% от родительского контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
+.image-link:hover img {
+    cursor: pointer; /* Показывает указатель руки при наведении */
+}
 
 @media (max-width: 1535px) {
     header {
