@@ -224,17 +224,30 @@ header {
     }
     
     @media (min-width: 240px) and (max-width: 640px) {
-        .hero-text h1 {
-            font-family: 'Permanent Marker', cursive, sans-serif;
-            font-size: 60px; /* Уменьшаем размер заголовка в разделе героя */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Убедитесь, что body и html занимают 100% высоты экрана */
+            overflow-x: hidden; /* Скрыть горизонтальный скролл, если он есть */
         }
     
-        .hero-text h4 {
-            font-size: 20px; /* Уменьшаем размер подзаголовка в разделе героя */
+        .slider {
+            width: 100%; /* Устанавливаем ширину слайдера на 100% экрана */
+            height: 100%; /* Высота автоматически подстраивается под содержимое */
+            display: block;
+            position: relative;
+        }
+        .item {
+            width: 55%; /* Responsive item width */
+            height: 55%;
+            top: 20%;
+            left: 20%;
+            
         }
     
-        .hero-text p {
-            font-size: 14px; /* Уменьшаем размер текста в разделе героя */
+        #next, #prev {
+            display: block;
+            font-size: auto;
         }
     
         .navlist {
