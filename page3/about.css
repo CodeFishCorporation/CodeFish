@@ -99,18 +99,15 @@ header {
     
 }
 .team-header .team-heading {
-    text-align: center;
     font-size: 36px;
     color: #00ff55;
-    position: absolute;
-    bottom: 420px;
-    left: 847px;
-
+    position: relative;
+    top: 180px; /* Смещение относительно текущего положения */
+    right: 33rem;
 }
  .team-section {
     display: flex;
     position: absolute;
-    clear: both; /* Переносит блок на следующую строку */
     top: 37rem;
     gap: 20px
     
@@ -158,7 +155,7 @@ header {
 }
 
 footer {
-    background-color: linear-gradient(245.59deg, #2c3b79 15%, #137a1c 31.53%, #032c08 65.52%);
+    color: linear-gradient(245.59deg, #2c3b79 15%, #137a1c 31.53%, #032c08 65.52%);
     color: #000;
     text-align: center;
     position: absolute;
