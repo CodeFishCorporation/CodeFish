@@ -1,0 +1,38 @@
+name: Update Sitemap
+
+# Определяем, когда запускать workflow: каждые 24 часа или при push
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Запускать ежедневно в 00:00 UTC
+  push:
+    branches:
+      - main  # Запуск при каждом обновлении ветки main
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # Установить последнюю версию Python 3.x
+
+      - name: Install dependencies
+        run: pip install xml
+
+      - name: Run sitemap update script
+        run: python update_sitemap.py
+
+      - name: Commit and push sitemap changes
+        run: |
+          git config --local user.name "GitHub Actions"
+          git config --local user.email "actions@github.com"
+          git add sitemap.xml
+          git commit -m "Update sitemap.xml with new <lastmod> date"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Токен для пуша изменений
